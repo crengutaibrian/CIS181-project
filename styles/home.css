@@ -1,0 +1,87 @@
+/* Home Page Styles */
+
+/* Write your styles here */
+
+.section-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  color: #0984e3;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  flex: 1;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.margin-top-80 {
+  margin-top: 80px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-auto {
+  height: auto;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.section-description {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+
+@media screen and (max-width: 640px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Write your mobile styles here */

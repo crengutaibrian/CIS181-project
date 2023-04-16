@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 6.4.1. -->
+    <title>Contact Us | Majestic Maids</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Global styles -->
+    <link href="styles/globals.css" rel="stylesheet" />
+
+    <!-- Page styles -->
+    <link href="styles/contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Section 6.4.2. -->
+    <header class="header">
+      <div class="container navigation">
+        <a href="index.html" class="logo">Majestic Maids</a>
+        <nav>
+          <a href="#" class="nav-icon">
+            <img
+              src="images/bars-solid.svg"
+              width="24"
+              height="24"
+              alt="Toggle menu"
+            />
+          </a>
+          <div class="nav-menu">
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="book-now.html" class="nav-link">Booking</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Section 6.4.3. -->
+      <section>
+        <div class="container">
+          <div>
+            <h1>Contact Us</h1>
+            <p>
+              If you text or email within business hours, we'll usually get back
+              to you within the same business day and typically within the hour.
+              After hours messages are addressed the next business day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6.4.4. -->
+      <section>
+        <div class="container">
+          <form action="scripts/contact.js" method="post">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Section 6.4.5. -->
+      <section>
+        <div class="container">
+          <h3>Address</h3>
+          <ul>
+            <li>
+              <a href="tel:1-800-555-1234">1-800-555-1234</a>
+            </li>
+            <li>
+              <a href="mailto:contact@majesticmaids.io"
+                >contact@majesticmaids.io</a
+              >
+            </li>
+            <li>
+              <address>
+                555 N Michigan Ave, Suite 2000, Chicago, IL 60611
+              </address>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 6.4.6. -->
+      <section>
+        <div class="container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.026238363871!2d-87.6237139!3d41.8922928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cac7b17488d%3A0x25e045092e4b58f3!2s555%20N%20Michigan%20Ave%20%232000%2C%20Chicago%2C%20IL%2060611!5e0!3m2!1sen!2sus!4v1681404391673!5m2!1sen!2sus"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Section 6.4.7. -->
+      <section>
+        <div class="container">
+          <h3>Hours</h3>
+          <p>Business hours are in Central Time.</p>
+          <ul>
+            <li>Monday - Friday 8AM-5PM</li>
+            <li>Saturday - Sunday 8AM-2PM</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- 6.4.8. -->
+    <footer class="footer">
+      <div class="container">
+        <div class="logo">Majestic Maids</div>
+        <p>
+          Made with <span class="heart" title="love">&#10084;</span> in Chicago,
+          IL
+        </p>
+        <div class="footer-menu">
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="book-now.html" class="footer-link">Booking</a>
+          <a href="about.html" class="footer-link">About Us</a>
+          <a href="contact.html" class="footer-link">Contact Us</a>
+          <a href="faq.html" class="footer-link">FAQ</a>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &#169; 2023 Majestic Maids LLC. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
