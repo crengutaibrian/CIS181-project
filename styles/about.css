@@ -1,7 +1,15 @@
 /* About Page Styles */
 
-/* Write your styles here */
-
+.hero {
+   display: flex;
+   align-items: center;
+   min-height: 40vh;
+   text-align: center;
+   background-image: url('../images/hero-3.jpg');
+   background-repeat: no-repeat;
+   background-position: center 85%;
+   background-size: cover;
+ }
 
 /* ===============================
    Mobile Styles: 0px to 640px 

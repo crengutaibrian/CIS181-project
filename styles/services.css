@@ -1,7 +1,68 @@
 /* Services Page Styles */
+.hero {
+   background-color: #dfe6e9;
+}
 
-/* Write your styles here */
+.row {
+   align-items: center;
+}
 
+.table-responsive {
+   overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #2d3436;
+  
+}
+
+thead th {
+   text-align: center;
+   font-size: 18px;
+   line-height: 1.4;
+}
+
+tbody td, tbody th {
+   padding: 8px;
+   border-bottom: 1px solid #ddd;
+}
+
+tbody th {
+   text-align: left;
+   font-weight: normal;
+   color: #636e72;
+}
+
+tbody td {
+   text-align: center;
+   font-size: 18px;
+}
+
+tbody h5 {
+   padding-top: 16px;
+   padding-bottom: 16px;
+   color: #2d3436;
+   font-size: 18px;
+}
+
+tbody h6, tbody h5 {
+   padding-top: 8px;
+   padding-bottom: 8px;
+   margin: 0;
+}
+
+.na {
+   color: #636e72;
+   font-size: 16px;
+}
+
+ol {
+   font-size: 12px;
+   margin-top: 32px;
+   margin-left: 16px;
+}
 /* ===============================
    Mobile Styles: 0px to 640px 
    ===============================

@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- 6.5.1. -->
-    <title>Book a Cleaning | Company Name</title>
+    <title>Book a Cleaning | Majestic Maids</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
     <!-- Global styles -->
@@ -24,49 +24,55 @@
         <a href="index.html" class="logo">Majestic Maids</a>
         <nav>
           <a href="#" class="nav-icon">
-            <img
-              src="images/bars-solid.svg"
-              width="24"
-              height="24"
-              alt="Toggle menu"
-            />
+            <img src="images/bars-solid.svg" alt="Toggle menu" />
           </a>
-          <div class="nav-menu">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="book-now.html" class="nav-link">Booking</a>
-            <a href="about.html" class="nav-link">About Us</a>
-            <a href="contact.html" class="nav-link">Contact Us</a>
-            <a href="faq.html" class="nav-link">FAQ</a>
-          </div>
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li>
+              <a href="book-now.html" class="nav-link">Booking</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li>
+              <a href="faq.html" class="nav-link">FAQ</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
     <main>
       <!-- Section 6.5.2. -->
       <section>
-        <div class="container">
-          <!-- Your code goes here -->
-          <h1>Schedule Your Cleaning Today</h1>
-          <p>
-            Experience the Majesty of a Spotless Home. Book Your Cleaning
-            Appointment Now with Majestic Maids and Enjoy a Hassle-free Cleaning
-            Experience.
+        <div class="container text-center">
+          <h1 class="mt-80">Set up your cleaning service</h1>
+          <p class="lead">
+            Tell us about your home and your needs, and we'll give you a price
+            so you can schedule your first visit. Right now.
           </p>
         </div>
       </section>
 
       <section>
         <div class="container">
-          <h2>Price List</h2>
           <table>
-            <tbody>
+            <thead>
               <tr>
-                <th>Service</th>
+                <th>Service Type</th>
                 <th>1 Bedroom</th>
                 <th>2 Bedrooms</th>
                 <th>3 Bedrooms</th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
                 <td>Standard Cleaning</td>
                 <td>$90.00</td>
@@ -94,91 +100,161 @@
       <section>
         <div class="container">
           <!-- Your code goes here -->
-          <h2>Booking Form</h2>
           <form action="#" method="POST">
             <fieldset>
               <legend>Contact information</legend>
-
-              <label for="name">Name</label>
-              <input id="name" type="text" name="name" required />
-
-              <label for="phone">Phone Number</label>
-              <input id="phone" type="tel" name="phone" required />
-
-              <label for="email">Email</label>
-              <input id="email" type="email" name="email" required />
-
-              <label for="address">Address</label>
-              <input id="address" type="email" name="address" required />
+              <div class="row">
+                <div class="col">
+                  <label for="name">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    required
+                    class="input-control"
+                    placeholder="Ex: John Smith"
+                  />
+                </div>
+                <div class="col">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    required
+                    class="input-control"
+                    placeholder="Ex: (123) 456-789"
+                  />
+                </div>
+                <div class="col">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    required
+                    class="input-control"
+                    placeholder="Ex: user@mail.com"
+                  />
+                </div>
+                <div class="col">
+                  <label for="address">Home Address</label>
+                  <input
+                    id="address"
+                    type="email"
+                    name="address"
+                    required
+                    class="input-control"
+                    placeholder="Ex: 1234 Main St."
+                  />
+                </div>
+              </div>
             </fieldset>
 
             <fieldset>
               <legend>Tell us about your home</legend>
-
-              <label for="service">Service Requested</label>
-              <select id="service" name="service">
-                <option value="1" selected>Standard Cleaning</option>
-                <option value="2">Deep Cleaning</option>
-                <option value="3">Move In/Out</option>
-              </select>
-
-              <label for="bedrooms">Bedrooms</label>
-              <select name="bedrooms" id="bedrooms">
-                <option value="0">0</option>
-                <option value="1" selected>1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-
-              <label for="bathrooms">Bathrooms</label>
-              <select name="bathrooms" id="bathrooms">
-                <option value="1">0</option>
-                <option value="1" selected>1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
+              <div class="row">
+                <div class="col">
+                  <label for="service">Service Requested</label>
+                  <select id="service" name="service" class="input-control">
+                    <option value="1" selected>Standard Cleaning</option>
+                    <option value="2">Deep Cleaning</option>
+                    <option value="3">Move In/Out</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="bedrooms">Bedrooms</label>
+                  <select name="bedrooms" id="bedrooms" class="input-control">
+                    <option value="0">0</option>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="bathrooms">Bathrooms</label>
+                  <select name="bathrooms" id="bathrooms" class="input-control">
+                    <option value="1">0</option>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset>
               <legend>Extras</legend>
-              <label for="fridge">Inside Fridge (+$50)</label>
-              <input type="checkbox" name="fridge" id="fridge" />
-              <br />
-              <label for="oven">Inside Oven (+$50)</label>
-              <input type="checkbox" name="oven" id="oven" />
-              <br />
-              <label for="cabinets">Inside Cabinets (+$50)</label>
-              <input type="checkbox" name="cabinets" id="cabinets" />
-              <br />
-              <label for="windows">Inside Windows (+$50)</label>
-              <input type="checkbox" name="windows" id="windows" />
+              <div class="row">
+                <label for="fridge" class="col">
+                  <input
+                    type="checkbox"
+                    name="fridge"
+                    id="fridge"
+                    class="checkbox"
+                  />
+                  <span class="checkbox-label">Inside Fridge (+$50)</span>
+                </label>
+                <label for="oven" class="col">
+                  <input type="checkbox" name="oven" id="oven" />
+                  <span class="checkbox-label">Inside Oven (+$50)</span>
+                </label>
+                <label for="cabinets" class="col">
+                  <input
+                    type="checkbox"
+                    name="cabinets"
+                    id="cabinets"
+                    class="checkbox"
+                  />
+                  <span class="checkbox-label">Inside Cabinets (+$50)</span>
+                </label>
+                <label for="windows" class="col">
+                  <input
+                    type="checkbox"
+                    name="windows"
+                    id="windows"
+                    class="checkbox"
+                  />
+                  <span class="checkbox-label">Inside Windows (+$50)</span>
+                </label>
+              </div>
             </fieldset>
 
             <fieldset>
               <legend>Date and time</legend>
               <div>
                 <label for="date">Date</label>
-                <input type="date" id="date" name="date" required />
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  class="input-control"
+                  required
+                />
               </div>
               <div>
                 <label for="time">Time</label>
-                <input type="time" id="time" name="time" required />
+                <input
+                  type="time"
+                  id="time"
+                  name="time"
+                  class="input-control"
+                  required
+                />
               </div>
               <br />
               <div>
                 <label for="info">Additional Information</label>
-                <textarea id="info" name="info"></textarea>
-              </div>
-              <div>
-                <label for="cancel">Cancellation Policy</label>
-                <input type="checkbox" id="cancel" name="cancel" required />
-                <span
-                  >I have read and agree to the company's cancellation
-                  policy</span
-                >
+                <textarea
+                  id="info"
+                  name="info"
+                  class="input-control"
+                  maxlength="500"
+                  rows="10"
+                ></textarea>
               </div>
             </fieldset>
-            <button type="submit">Book Appointment</button>
+            <button type="submit" class="button button-blue">Submit</button>
           </form>
         </div>
       </section>

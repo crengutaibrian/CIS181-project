@@ -1,39 +1,31 @@
 /* Home Page Styles */
-
-/* Write your styles here */
-
-.section-title {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.75px;
-  color: #0984e3;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.row {
+.hero {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  min-height: 50vh;
+  text-align: center;
+  background-image: url('../images/hero2.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  color: white;
 }
 
-.column {
-  flex: 1;
-  padding-left: 16px;
-  padding-right: 16px;
+.hero h1 {
+  max-width: 800px;
+  margin: 0 auto 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.margin-top-80 {
-  margin-top: 80px;
+.hero .title-sm {
+  color: white;
 }
 
-.width-100 {
-  width: 100%;
-}
-
-.height-auto {
-  height: auto;
+.number {
+  display: block;
+  font-size: 42px;
+  font-family: 'Shrikhand', sans-serif;
+  color: #0984e3;
 }
 
 .gallery-image {
@@ -42,10 +34,14 @@
   margin-bottom: 32px;
 }
 
-.section-description {
-  width: 65%;
+.description {
+  
   margin-left: auto;
   margin-right: auto;
+}
+
+.button {
+  margin-top: 16px;
 }
 
 blockquote {
@@ -54,8 +50,9 @@ blockquote {
 
 blockquote p {
   padding: 15px;
-  background: #eee;
-  border-radius: 5px;
+  color: white;
+  background: #0984e3;
+  border-radius: 8px;
 }
 
 blockquote p::before {
@@ -71,17 +68,3 @@ blockquote p::after {
    Mobile Styles: 0px to 640px 
    ===============================
 */
-
-@media screen and (max-width: 640px) {
-  .row {
-    flex-direction: column;
-  }
-
-  .column {
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-bottom: 16px;
-  }
-}
-
-/* Write your mobile styles here */

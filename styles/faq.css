@@ -1,6 +1,31 @@
 /* FAQ Page Styles */
 
-/* Write your styles here */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* .title-sm {
+   margin: 32px 0;
+} */
+
+p {
+  color: #636e72;
+}
+
+.col {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+@media (max-width: 640px) {
+  .col {
+    width: 100%;
+  }
+  /* p {
+      margin-bottom: 16px;
+   } */
+}
 
 /* ===============================
    Mobile Styles: 0px to 640px 

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
     <!-- Global styles -->
@@ -25,21 +25,28 @@
         <a href="index.html" class="logo">Majestic Maids</a>
         <nav>
           <a href="#" class="nav-icon">
-            <img
-              src="images/bars-solid.svg"
-              width="24"
-              height="24"
-              alt="Toggle menu"
-            />
+            <img src="images/bars-solid.svg" alt="Toggle menu" />
           </a>
-          <div class="nav-menu">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="book-now.html" class="nav-link">Booking</a>
-            <a href="about.html" class="nav-link">About Us</a>
-            <a href="contact.html" class="nav-link">Contact Us</a>
-            <a href="faq.html" class="nav-link">FAQ</a>
-          </div>
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li>
+              <a href="book-now.html" class="nav-link">Booking</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li>
+              <a href="faq.html" class="nav-link">FAQ</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -47,13 +54,15 @@
       <!-- Section 6.6.3. -->
       <section>
         <div class="container">
-          <h1>Frequently Asked Questions</h1>
-          <p>
-            We believe that customer support should be straightforward and
-            hassle-free. Whether you have a question about our services or need
-            help with an issue, our team is here to provide prompt and reliable
-            assistance.
-          </p>
+          <div class="text-center mt-80">
+            <h1>Frequently Asked Questions</h1>
+            <p class="lead">
+              We believe that customer support should be straightforward and
+              hassle-free. Whether you have a question about our services or
+              need help with an issue, our team is here to provide prompt and
+              reliable assistance.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -61,10 +70,10 @@
       <section>
         <div class="container">
           <div>
-            <h5>General</h5>
-            <ul>
-              <li>
-                <h6>How do I get started?</h6>
+            <h5 class="title-sm">General</h5>
+            <ul class="row">
+              <li class="col">
+                <h5>How do I get started?</h5>
                 <p>
                   To get started, please fill out our online form. Once we have
                   gathered some information about your requirements, we will
@@ -72,14 +81,14 @@
                   schedule an appointment at your convenience
                 </p>
               </li>
-              <li>
-                <h6>How many people will come to clean my house?</h6>
+              <li class="col">
+                <h5>How many people will come to clean my house?</h5>
                 <p>
                   We typically assign a team of two housekeepers to each job.
                 </p>
               </li>
-              <li>
-                <h6>What if I'm not happy with your service?</h6>
+              <li class="col">
+                <h5>What if I'm not happy with your service?</h5>
                 <p>
                   Your satisfaction is our top priority. If you are not fully
                   content with the cleaning, please let us know, and we will be
@@ -91,20 +100,12 @@
           </div>
 
           <div>
-            <h5>Services</h5>
-            <ul>
-              <li>
-                <h6>Which services are excluded?</h6>
-                <p>
-                  Bio-hazard remediation (mold, etc.), heavy-duty or steam
-                  carpet cleaning, furniture or appliance moving, cleaning of
-                  human or animal waste
-                </p>
-              </li>
-              <li>
-                <h6>
+            <h5 class="title-sm">Services</h5>
+            <ul class="row">
+              <li class="col">
+                <h5>
                   Will I need to supply any cleaning products or equipment?
-                </h6>
+                </h5>
                 <p>
                   No, you won't have to. We will supply all the necessary
                   cleaning supplies and equipment, including a vacuum cleaner
@@ -112,8 +113,16 @@
                   cleaning.
                 </p>
               </li>
-              <li>
-                <h6>What is the estimated duration for cleaning my house?</h6>
+              <li class="col">
+                <h5>Which services are excluded?</h5>
+                <p>
+                  Bio-hazard remediation (mold, etc.), heavy-duty or steam
+                  carpet cleaning, furniture or appliance moving, cleaning of
+                  human or animal waste
+                </p>
+              </li>
+              <li class="col">
+                <h5>What is the estimated duration for cleaning my house?</h5>
                 <p>
                   The cleaning time for your home will depend on the number of
                   bedrooms and bathrooms you have. Our checkout process will
@@ -125,10 +134,10 @@
           </div>
 
           <div>
-            <h5>Booking</h5>
-            <ul>
-              <li>
-                <h6>How do subscriptions work?</h6>
+            <h5 class="title-sm">Booking</h5>
+            <ul class="row">
+              <li class="col">
+                <h5>How do subscriptions work?</h5>
                 <p>
                   Our subscription service allows you to schedule regular
                   cleanings at a frequency of your choice using our web form.
@@ -137,8 +146,8 @@
                   time of service.
                 </p>
               </li>
-              <li>
-                <h6>How do I cancel my subscription?</h6>
+              <li class="col">
+                <h5>How do I cancel my subscription?</h5>
                 <p>
                   To cancel your subscription, simply send us an email or give
                   us a call using the contact information provided on our
@@ -147,10 +156,10 @@
                   cancelled.
                 </p>
               </li>
-              <li>
-                <h6>
+              <li class="col">
+                <h5>
                   How can I skip, cancel, or reschedule a cleaning appointment?
-                </h6>
+                </h5>
                 <p>
                   We've made managing your cleaning appointments as convenient
                   as possible, and you can do so through our website or by
@@ -164,10 +173,10 @@
           </div>
 
           <div>
-            <h5>Pricing</h5>
-            <ul>
-              <li>
-                <h6>What is the cost for house cleaning services?</h6>
+            <h5 class="title-sm">Pricing</h5>
+            <ul class="row">
+              <li class="col">
+                <h5>What is the cost for house cleaning services?</h5>
                 <p>
                   Our house cleaning services are charged on an hourly basis,
                   with a minimum booking of 2 labor-hours. Any additional
@@ -175,8 +184,8 @@
                   in extra time being added to your total bill.
                 </p>
               </li>
-              <li>
-                <h6>What payment methods are accepted?</h6>
+              <li class="col">
+                <h5>What payment methods are accepted?</h5>
                 <p>
                   We offer multiple payment options for your convenience,
                   including online payment or payment at the time of service via
@@ -184,11 +193,11 @@
                   are not accepted.
                 </p>
               </li>
-              <li>
-                <h6>
+              <li class="col">
+                <h5>
                   Is there a fee for cancelling or rescheduling a cleaning
                   appointment?
-                </h6>
+                </h5>
                 <p>
                   We kindly request that you give us at least 24 hours' notice
                   if you need to reschedule or cancel your appointment. Failure
@@ -236,7 +245,7 @@
               <li>Sun: Closed</li>
             </ul>
           </div>
-          <br>
+          <br />
           <div>
             <h5>Our Office</h5>
             <address>
@@ -259,7 +268,7 @@
                   rel="noopener noreferrer"
                 >
                   Cleaning tips from the American Cleaning Institute
-                </a>     
+                </a>
               </li>
               <li>
                 <a
@@ -267,7 +276,8 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  How to Clean a Bathroom</a>
+                  How to Clean a Bathroom</a
+                >
               </li>
               <li>
                 <a
@@ -275,7 +285,8 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  How to Clean a Kitchen</a>
+                  How to Clean a Kitchen</a
+                >
               </li>
               <li>
                 <a
@@ -283,7 +294,8 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  How to Clean a Living Room</a>
+                  How to Clean a Living Room</a
+                >
               </li>
               <li>
                 <a
@@ -291,8 +303,10 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  How to Clean a Bedroom</a>
+                  How to Clean a Bedroom</a
+                >
               </li>
+            </ul>
           </div>
         </div>
       </section>
