@@ -22,7 +22,14 @@
     <!-- Section 6.6.2. -->
     <header class="header">
       <div class="container navigation">
-        <a href="index.html" class="logo">Majestic Maids</a>
+        <a href="index.html" class="logo">
+          <img
+            src="images/logo-house.png"
+            alt="Majestic Maids"
+            class="logo-img"
+          />
+          <span>Majestic Maids</span>
+        </a>
         <nav>
           <a href="#" class="nav-icon">
             <img src="images/bars-solid.svg" alt="Toggle menu" />
@@ -52,9 +59,9 @@
     </header>
     <main>
       <!-- Section 6.6.3. -->
-      <section>
+      <section class="hero">
         <div class="container">
-          <div class="text-center mt-80">
+          <div class="text-center">
             <h1>Frequently Asked Questions</h1>
             <p class="lead">
               We believe that customer support should be straightforward and
@@ -62,6 +69,23 @@
               need help with an issue, our team is here to provide prompt and
               reliable assistance.
             </p>
+            <ol class="hero-menu">
+              <li>
+                <a href="#general">General</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#pricing">Pricing</a>
+              </li>
+              <li>
+                <a href="#booking">Booking</a>
+              </li>
+              <li>
+                <a href="#contact">Contact Us</a>
+              </li>
+            </ol>
           </div>
         </div>
       </section>
@@ -69,43 +93,55 @@
       <!-- Section 6.6.4. -->
       <section>
         <div class="container">
-          <div>
-            <h5 class="title-sm">General</h5>
+          <div id="general">
+            <h3>1. General</h3>
             <ul class="row">
               <li class="col">
-                <h5>How do I get started?</h5>
+                <h6 class="question">How do I get started?</h6>
                 <p>
                   To get started, please fill out our online form. Once we have
                   gathered some information about your requirements, we will
                   provide you with a price quote, and then you can proceed to
-                  schedule an appointment at your convenience
+                  schedule an appointment at your convenience.
                 </p>
               </li>
               <li class="col">
-                <h5>How many people will come to clean my house?</h5>
-                <p>
-                  We typically assign a team of two housekeepers to each job.
-                </p>
-              </li>
-              <li class="col">
-                <h5>What if I'm not happy with your service?</h5>
+                <h6 class="question">
+                  What if I'm not happy with your service?
+                </h6>
                 <p>
                   Your satisfaction is our top priority. If you are not fully
                   content with the cleaning, please let us know, and we will be
                   happy to provide a free re-cleaning to ensure your complete
-                  satisfaction
+                  satisfaction.
+                </p>
+              </li>
+              <li class="col">
+                <h6 class="question">Do I have to be home for the cleaning?</h6>
+                <p>
+                  Whether or not you're home during your booking is up to you.
+                  Many people, however, like having their home serviced while
+                  they are at work or away for awhile.
+                </p>
+              </li>
+              <li class="col">
+                <h6 class="question">
+                  How many people will come to clean my house?
+                </h6>
+                <p>
+                  We typically assign a team of two housekeepers to each job.
                 </p>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h5 class="title-sm">Services</h5>
+          <div id="services">
+            <h3>2. Services</h3>
             <ul class="row">
               <li class="col">
-                <h5>
+                <h6 class="question">
                   Will I need to supply any cleaning products or equipment?
-                </h5>
+                </h6>
                 <p>
                   No, you won't have to. We will supply all the necessary
                   cleaning supplies and equipment, including a vacuum cleaner
@@ -114,15 +150,17 @@
                 </p>
               </li>
               <li class="col">
-                <h5>Which services are excluded?</h5>
+                <h6 class="question">Which services are excluded?</h6>
                 <p>
                   Bio-hazard remediation (mold, etc.), heavy-duty or steam
                   carpet cleaning, furniture or appliance moving, cleaning of
-                  human or animal waste
+                  human or animal waste.
                 </p>
               </li>
               <li class="col">
-                <h5>What is the estimated duration for cleaning my house?</h5>
+                <h6 class="question">
+                  What is the estimated duration for cleaning my house?
+                </h6>
                 <p>
                   The cleaning time for your home will depend on the number of
                   bedrooms and bathrooms you have. Our checkout process will
@@ -130,14 +168,27 @@
                   amount of time is allocated for a home of your size.
                 </p>
               </li>
+              <li class="col">
+                <h6 class="question">
+                  Are your cleaning products safe for pets and children?
+                </h6>
+                <p>
+                  Yes, we use environmentally-friendly and non-toxic cleaning
+                  products that are safe for both pets and children. We
+                  understand the importance of using cleaning solutions that
+                  don't harm the health of our clients and their loved ones,
+                  which is why we prioritize the use of eco-friendly products in
+                  all of our cleaning services.
+                </p>
+              </li>
             </ul>
           </div>
 
-          <div>
-            <h5 class="title-sm">Booking</h5>
+          <div id="booking">
+            <h3>3. Booking</h3>
             <ul class="row">
               <li class="col">
-                <h5>How do subscriptions work?</h5>
+                <h6 class="question">How do subscriptions work?</h6>
                 <p>
                   Our subscription service allows you to schedule regular
                   cleanings at a frequency of your choice using our web form.
@@ -147,7 +198,7 @@
                 </p>
               </li>
               <li class="col">
-                <h5>How do I cancel my subscription?</h5>
+                <h6 class="question">How do I cancel my subscription?</h6>
                 <p>
                   To cancel your subscription, simply send us an email or give
                   us a call using the contact information provided on our
@@ -157,9 +208,9 @@
                 </p>
               </li>
               <li class="col">
-                <h5>
+                <h6 class="question">
                   How can I skip, cancel, or reschedule a cleaning appointment?
-                </h5>
+                </h6>
                 <p>
                   We've made managing your cleaning appointments as convenient
                   as possible, and you can do so through our website or by
@@ -169,14 +220,25 @@
                   communication that is most convenient for you.
                 </p>
               </li>
+              <li class="col">
+                <h6 class="question">How can I book a cleaning service?</h6>
+                <p>
+                  You can easily book a cleaning service by calling our hotline
+                  number or filling out our online booking form. Our customer
+                  service team will assist you in scheduling a cleaning service
+                  that fits your preferred date and time.
+                </p>
+              </li>
             </ul>
           </div>
 
-          <div>
-            <h5 class="title-sm">Pricing</h5>
+          <div id="pricing">
+            <h3>4. Pricing</h3>
             <ul class="row">
               <li class="col">
-                <h5>What is the cost for house cleaning services?</h5>
+                <h6 class="question">
+                  What is the cost for house cleaning services?
+                </h6>
                 <p>
                   Our house cleaning services are charged on an hourly basis,
                   with a minimum booking of 2 labor-hours. Any additional
@@ -185,7 +247,7 @@
                 </p>
               </li>
               <li class="col">
-                <h5>What payment methods are accepted?</h5>
+                <h6 class="question">What payment methods are accepted?</h6>
                 <p>
                   We offer multiple payment options for your convenience,
                   including online payment or payment at the time of service via
@@ -194,10 +256,10 @@
                 </p>
               </li>
               <li class="col">
-                <h5>
+                <h6 class="question">
                   Is there a fee for cancelling or rescheduling a cleaning
                   appointment?
-                </h5>
+                </h6>
                 <p>
                   We kindly request that you give us at least 24 hours' notice
                   if you need to reschedule or cancel your appointment. Failure
@@ -205,7 +267,63 @@
                   of $50.00.
                 </p>
               </li>
+              <li class="col">
+                <h6 class="question">
+                  How do you determine the cost of a cleaning service?
+                </h6>
+                <p>
+                  The cost of a cleaning service depends on various factors,
+                  such as the type of service, the size of the area to be
+                  cleaned, and the frequency of the service. We provide a
+                  personalized quote based on your specific cleaning needs, and
+                  we ensure that our pricing is competitive and transparent.
+                </p>
+              </li>
             </ul>
+          </div>
+
+          <div id="contact">
+            <h3>5. Contact Us</h3>
+            <ul class="row">
+              <li class="col">
+                <h6 class="question">How can I contact you?</h6>
+                <p>
+                  You can contact us by calling our hotline number or sending us
+                  an email. Our customer service team is available to assist you
+                  from 8:00 AM to 5:00 PM, Monday to Friday.
+                </p>
+                <p>
+                  Email:
+                  <a href="mailto:contact@majesticmaids.io">
+                    contact@majesticmaids.io
+                  </a>
+                  <br />
+                  Phone number:
+                  <a href="tel:1-800-555-1234">1-800-555-1234</a>
+                </p>
+              </li>
+              <li class="col">
+                <h6 class="question">What are your business hours?</h6>
+                <p>
+                  Our business hours are from 8:00 AM to 5:00 PM, Monday to
+                  Friday. We are closed on weekends and major holidays.
+                </p>
+              </li>
+              <li class="col">
+                <h6 class="question">What is your service area?</h6>
+                <p>
+                  We provide cleaning services to residential and commercial
+                  clients in the greater Chicago area.
+                </p>
+              </li>
+              <li class="col">
+                <h6 class="question">Do you offer free estimates?</h6>
+                <p>
+                  Yes, we offer free estimates for all of our cleaning services.
+                  Simply fill out our online booking form or give us a call to
+                  request a free quote.
+                </p>
+              </li>
           </div>
         </div>
       </section>
@@ -213,44 +331,27 @@
       <!-- Section 6.6.5. -->
       <section>
         <div class="container">
-          <div>
-            <div>
-              <h3>We are here for you. Book your cleaning today.</h3>
+          <div class="row">
+            <div class="col">
+              <h2>
+                We are here for you. <br />
+                Book your cleaning today.
+              </h2>
+              <a class="button button-blue" href="book-now.html">
+                Book a Cleaning
+              </a>
             </div>
-            <div>
-              <a href="book-now.html">Book a Cleaning Today</a>
+            <div class="col">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/gR4BiOBJfEc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 6.6.6. -->
-      <section>
-        <div class="container">
-          <div>
-            <h5>Contact Us</h5>
-            <ul>
-              <li>
-                Email:
-                <a href="mailto:contact@majesticmaids.io">
-                  contact@majesticmaids.io
-                </a>
-              </li>
-              <li>
-                Phone number:
-                <a href="tel:1-800-555-1234">1-800-555-1234</a>
-              </li>
-              <li>Mon - Fri: 8am - 5pm</li>
-              <li>Sat: 9am - 2pm</li>
-              <li>Sun: Closed</li>
-            </ul>
-          </div>
-          <br />
-          <div>
-            <h5>Our Office</h5>
-            <address>
-              Address: 555 N Michigan Ave, Suite 2000, Chicago, IL 60611
-            </address>
           </div>
         </div>
       </section>
@@ -259,8 +360,8 @@
       <section>
         <div class="container">
           <div>
-            <h5>Cleaning Tips</h5>
-            <ul>
+            <h2>Cleaning Tips</h2>
+            <ol>
               <li>
                 <a
                   href="https://www.cleaninginstitute.org/cleaning-tips"
@@ -306,7 +407,7 @@
                   How to Clean a Bedroom</a
                 >
               </li>
-            </ul>
+            </ol>
           </div>
         </div>
       </section>

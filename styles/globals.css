@@ -169,6 +169,7 @@ img {
   flex: 1;
   padding-left: 16px;
   padding-right: 16px;
+  margin-bottom: 16px;
 }
 
 /* Components */
@@ -192,12 +193,21 @@ img {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
   font-family: 'Shrikhand', sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
   text-decoration: none;
   letter-spacing: 1px;
+}
+
+.logo-img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
 }
 
 .button {
@@ -375,6 +385,5 @@ img {
   .col {
     padding-left: 8px;
     padding-right: 8px;
-    margin-bottom: 16px;
   }
 }

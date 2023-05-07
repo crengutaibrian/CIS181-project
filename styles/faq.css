@@ -1,16 +1,49 @@
 /* FAQ Page Styles */
+.hero {
+  background-color: #dfe6e9;
+}
+
+.hero a {
+  font-weight: 600;
+}
+
+h3 {
+  margin-top: 48px;
+  margin-bottom: 64px;
+  padding-left: 16px;
+  font-size: 24px;
+}
+.question {
+  font-weight: 600;
+}
 
 ul {
   list-style: none;
   padding-left: 0;
 }
 
-/* .title-sm {
-   margin: 32px 0;
-} */
+.hero-menu {  
+  list-style: none;
+  padding-left: 0;
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.hero-menu li {
+  text-align: center;
+  padding: 8px;
+}
+
+ol {
+  margin-left: 16px;
+}
 
 p {
   color: #636e72;
+  margin-bottom: 0;
 }
 
 .col {
